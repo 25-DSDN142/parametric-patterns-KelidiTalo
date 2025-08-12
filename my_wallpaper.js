@@ -20,6 +20,29 @@ function wallpaper_background() {
   background(240, 255, 240); //light honeydew green colour
 }
 
-function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-  rect(40 ,40, rect_width, rect_height);
+let center = 100; 
+
+function my_symbol() {
+//base lines
+line(0,0,200,200)
+line(0,200,200,0)
+line(0,100,200,100)
+line(100,0,100,200)
+
+Hoops();
 }
+
+function Hoops (){
+//right side
+line(center,70,120,80)
+line(120,80,130,center)
+line(130,center,120,120)
+line(120,120,center,130)
+//left side
+line(center,70,80,80)
+line(80,80,70,center)
+line(70,center,80,120)
+line(80,120,center,130)
+}
+
+
